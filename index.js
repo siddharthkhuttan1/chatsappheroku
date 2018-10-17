@@ -11,6 +11,7 @@ var io=socket(server);
 var PORT=process.env.PORT||4000;
 
 var activeusers={};
+//socket code
 io.on('connection',function (socket) {
     console.log("Connection established");
     socket.on('send_message',function(data){
